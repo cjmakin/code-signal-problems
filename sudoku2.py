@@ -10,6 +10,8 @@
 #                  i[3-5]j[0-2] (3-7), i[3-5]j[3-5] (6-10), i[3-5]j[6-8] (9-13)
 #                  i[6-8]j[0-2] (6-10), i[6-8]j[3-5] (9-13), i[6-8]j[6-8] (12-16)
 
+
+# Finds and returns appropriate subgrid dictionary key.
 def getSubGrid(i, j):
     subGrid = 0
 
@@ -43,7 +45,7 @@ def solution(grid):
     j, g = 0, -1
 
     # Create dictionary with empty array to store values in each row and column
-    # rows are keys 0-9, columns are keys 10-19
+    # rows are keys 0 to 8, columns are keys 9 to 19, subgrids are -1 to -9.
     for i in range(0, 9):
         stateDict[i] = []
         stateDict[j+10] = []
@@ -51,6 +53,8 @@ def solution(grid):
         j += 1
         g -= 1
 
+    # Check if each grid value is already in its respective row, column, and subgrid. 
+    # If it is, return false, if not, add to the dictionary in respective row, column, subgrid array.
     for i in range(0, len(grid)):
         for j in range(0, len(grid)):
             subGrid = getSubGrid(i, j)

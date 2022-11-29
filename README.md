@@ -2,7 +2,7 @@
 
 My solutions to a few CodeSignal problems, mostly in Python.
 
-These are taken from the Interview Prep Crash Course and is divided into 8 parts.
+These are taken from the Interview Prep Crash Course and divided into 8 parts:
 
 #### Arrays
 - [x] firstDuplicate

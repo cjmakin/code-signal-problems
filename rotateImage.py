@@ -3,7 +3,7 @@
 # Example:
 #
 # a = [[1, 2, 3]
-#      [4, 5, 6],  
+#      [4, 5, 6],
 #      [7, 8, 9]]
 # the output should be
 #
@@ -13,20 +13,21 @@
 #  [9, 6, 3]]
 #
 # Solution is O(1) memory complexity and O(n**2) time complexity
+
 def solution(a):
 
     min = -1
     length = len(a)
     max = length
     next = 0
-    rotating = True
+    rotated = True
 
-    while rotating:
+    while rotated:
         min += 1
         max -= 1
         rotationsRemaining = length - 1
 
-        if min == max:
+        if min == max or max < min:
             break
 
         while rotationsRemaining > 0:
@@ -49,7 +50,7 @@ def solution(a):
                     prev = next
                     j += 1
 
-                # Move the right column south
+                # Move the right column sout
                 elif j == max and i < max:
 
                     next = a[i+1][j]
@@ -82,36 +83,19 @@ def solution(a):
     return a
 
 
-# Naive Solution. Put each row in correct column. Doesn't work, have to do 1 by 1
-# q = len(a)-1
-#
-# for i in range(0, len(a)):
-#
-# p = len(a)-1
-#
-# for j in range(0, len(a)):
-# temp = a[i][j]
-# a[i][j] = a[q][p]
-# a[q][p] = temp
-#
-# p -= 1
-#
-# q -= 1
-
 arr3 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 arr3 = solution(arr3)
 for row in arr3:
     print(row)
 
-arr4 = [[1, 2, 3, 4], 
-        [5, 6, 7, 8], 
-        [9, 10, 11, 12], 
+arr4 = [[1, 2, 3, 4],
+        [5, 6, 7, 8],
+        [9, 10, 11, 12],
         [13, 14, 15, 16]]
 arr4 = solution(arr4)
 print()
 for row in arr4:
     print(row)
-
 
 arr10 = [[40, 12, 15, 37, 33, 11, 45, 13, 25, 3],
          [37, 35, 15, 43, 23, 12, 22, 29, 46, 43],

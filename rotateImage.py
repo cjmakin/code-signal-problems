@@ -1,4 +1,5 @@
 # You are given an n x n 2D matrix that represents an image. Rotate the image by 90 degrees (clockwise).
+# Try to use O(1) memory.
 # Example:
 #
 # a = [[1, 2, 3]

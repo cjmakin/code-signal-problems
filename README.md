@@ -13,7 +13,7 @@ These are from the Interview Prep Crash Course and divided into 8 parts:
 
 #### Linked Lists
 - [X] removeKFromList
-- [ ] isListPalindrome
+- [X] isListPalindrome
 - [ ] addTwoHudeNumbers
 - [ ] mergeTwoLinkedLists
 - [ ] reverseNodesInKGroups

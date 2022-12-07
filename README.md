@@ -1,8 +1,8 @@
 # CodeSignal Problems
 
-My solutions to a few CodeSignal problems, mostly in Python.
+My solutions to a few CodeSignal problems.
 
-These are taken from the Interview Prep Crash Course and divided into 8 parts:
+These are from the Interview Prep Crash Course and divided into 8 parts:
 
 #### Arrays
 - [x] firstDuplicate
@@ -12,7 +12,7 @@ These are taken from the Interview Prep Crash Course and divided into 8 parts:
 - [x] isCryptSolution
 
 #### Linked Lists
-- [ ] removeKFromList
+- [X] removeKFromList
 - [ ] isListPalindrome
 - [ ] addTwoHudeNumbers
 - [ ] mergeTwoLinkedLists

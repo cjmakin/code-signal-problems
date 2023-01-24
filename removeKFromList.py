@@ -25,8 +25,6 @@ class LinkedNode(object):
             
         node = self.next
         prev = self
-        node.printList()
-        prev.printList()
         
         while node:
             if node.value == x:
